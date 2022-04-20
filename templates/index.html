@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página inicial</title>
 </head>
 <body>
-    <form>
-        <div class="form-group">
+    <h1>Cadastro</h1>
+    <hr>
+    <a href="{{url_for('cadastrar')}}">Cadastrar Clientes</a>
+    <br>
+    <br>
+    <a href="{{url_for('lista')}}">Listar Clientes</a>
+         <!--<div class="form-group">
           <label for="nome">Nome</label>
           <input type="nome" class="form-control" id="nome" placeholder="Seu Nome">
         </div>
@@ -19,6 +24,6 @@
           <label for="endereco">Endereço</label>
           <input type="endereco" class="form-control" id="endereco" placeholder="Seu Endereço">
         </div>
-        <button type="submit"  value="enviar" name= "envio" class="btn btn-primary">Enviar</button>
+        <button type="submit" name="enviar" action="{{ url_for('cadastro')}}" class="btn btn-primary">Enviar</button> -->
 </body>
 </html>
